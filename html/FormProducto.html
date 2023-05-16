@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Producto</title>
+</head>
+
+<body> 
+<form id="tercerformulario">
+
+  <fieldset id="data-basic">
+    <legend>Datos Básicos</legend>
+    
+	Nombre del Producto
+    <input id="basic" autofocus type="text" name="nombre"  required>
+
+    <br>
+	<br>
+	
+	Descripción<br>
+    <textarea id="basic-2" name="descripción" required></textarea>
+    
+	<br><br>
+    Foto:
+    <br> <input id="basic-3" type="file" name="imagen" required>
+    
+	<br><br>
+    <input id="basic-4" name="informacion" type="checkbox">Añadir información confidencial    
+  </fieldset>
+  
+  <br>
+  
+  <fieldset>
+    <legend>Datos Económicos</legend>
+		<table align="left" border="0">
+		  <tr>
+		  		<td>Precio: </td>
+				<td> <input type="number" required> </td>
+		  
+				<td>$</td>
+				<td>ㅤㅤㅤㅤ</td>
+				<td>Impuestos: </td>
+				<td>
+          <select name="impuesto" id="impuesto">
+  					<option value="4">4%</option>
+  					<option value="8">8%</option>
+  					<option value="12">12%</option>
+  					<option value="16">16%</option>
+				  </select></td>
+		  </tr>
+		</table>		
+	<br><br>
+    <label>Promoción</label><br>
+    <input type="radio" value="No">Ninguno  <br>
+    <input type="radio" value="trans-free" >Tranporte Gratuito<br>
+    <input type="radio" value="descuento5">Descuento 5%<br>
+  </fieldset>
+  
+  <br>
+  <input type="submit" name="submit-btn" value="Guardar Cambios">
+  <input type="reset" name="reset-btn" value="Borrar los datos introducidos">
+  <br><br><br>
+  <a href="../index.html">REGRESAR</a>
+  </form>
+  </body>
+</html>

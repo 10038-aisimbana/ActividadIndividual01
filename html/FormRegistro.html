@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+</head>
+<body>
+    <form id="primerFormulario">
+        <fieldset>
+            <legend>DIRECCIÓN DE ENVIO</legend>
+            Calle Principal <br>
+            <input type="text" name="calle-princ" value="">
+            <br><br>
+            Transversal<br>
+            <input type="text" name="calle-trans" value="">
+            
+            <br><br>
+            <input type="checkbox" name="tip-entrega1" value="propietario"> Entrega al propietario.<br>
+            <input type="checkbox" name="tip-entrega2" value="tercero" onclick="mostrarFormulario()"> Entrega a un tercero.
+            
+            <br><br>
+            Cantones: <select  name="sel-cant">
+                <optgroup label="Pichincha">
+                    <option value="C">Cayambe</option>
+                    <option value="M">Mejía</option>
+                    <option value="PM">Pedro Moncayo</option>
+                    <option value="PQ">Puerto Quito</option>
+                    <option value="Q">Quito</option>
+                    <option value="R">Rumiñahui</option>
+                    <option value="SM">San Miguel de los Bancos</option>
+                </optgroup>         
+            </select>
+            
+            <br><br>
+            <input type="submit" name="send-form" value="ENVIAR DATOS">
+        </fieldset>
+    </form>
+
+    <br>
+
+    <form id="segundoFormulario" style="display:none;">
+        <br>  
+        <fieldset>
+            <legend>INFORMACIÓN CONFIDENCIAL</legend>
+            Código Postal: 
+            <input type="password" name="cod-pstal" value="">
+            
+            <br><br>
+            Referencia de la Dirección:<br>
+            <textarea name="mensaje" rows="3" cols="30" id="mensaje"></textarea><br>
+            <br>
+            <input type="submit" name="send-form2" value="Guardar">
+        </fieldset>
+    </form>
+    <br><br>
+    <a href="../index.html">REGRESAR</a>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html>
